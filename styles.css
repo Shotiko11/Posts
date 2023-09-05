@@ -121,7 +121,7 @@ button {
 p {
     color: brown;
     background-color: #fff;
-    border-radius: 5px;
+    border-radius: 10px; /* Rounded corners */
     padding: 20px;
     font-size: 16px;
     max-width: 80%;
