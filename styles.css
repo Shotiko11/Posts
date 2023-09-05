@@ -50,6 +50,7 @@ h1 {
     cursor: pointer;
     position: relative; /* Add relative positioning */
     overflow: hidden; /* Hide overflowing content */
+    margin-bottom: 40px; /* Increased margin between posts */
 }
 
 /* Change cursor to pointer when hovering over posts */
