@@ -142,3 +142,8 @@ button {
         max-width: 95%;
     }
 }
+
+
+div{
+    display: none;
+}
