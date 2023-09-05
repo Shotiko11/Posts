@@ -102,31 +102,37 @@ button {
 }
 
 /* Style the overlay content */
+.overlay .overlay-content {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    font-size: 16px;
+    max-width: 80%;
+    text-align: left;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4); /* Increased shadow */
+    transform: translateY(-20px);
+    opacity: 0;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
 .overlay.activeOverlay {
     display: flex;
+}
+
+.overlay.activeOverlay .overlay-content {
+    transform: translateY(0);
+    opacity: 1;
 }
 
 /* Style the close button */
 .close {
     position: absolute;
-    top: 20px;
-    right: 20px;
-    color: white;
+    top: 10px;
+    right: 10px;
+    color: #fff;
     font-size: 24px;
     cursor: pointer;
     z-index: 10000;
-}
-
-/* Style the post content in the overlay */
-p {
-    color: brown;
-    background-color: #fff;
-    border-radius: 10px; /* Rounded corners */
-    padding: 20px;
-    font-size: 16px;
-    max-width: 80%;
-    text-align: left;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Increased shadow */
 }
 
 /* Media query for smaller screens */
